@@ -1,0 +1,25 @@
+{
+  "name": "halosql",
+  "displayName": "Halo SQL Schema",
+  "description": "The Halo SQL schema. Provides code completion for all Halo SQL fields.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "halosql",
+      "aliases": ["Halo SQL", "halosql"],
+      "extensions": [".sql"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "halosql",
+      "scopeName": "source.sql",
+      "path": "./syntaxes/sql.tmLanguage"
+    }]
+  }
+}
